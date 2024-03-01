@@ -17,14 +17,27 @@ public class Main {
         list.addToFront(5);
         list.addToFront(6);
 
-        list.removeFromRear();
-        list.removeFromFront();
+        /*list.removeFromRear();
+        list.removeFromFront();*/
+
+        for (Integer i : list) {
+            System.out.println(i);
+        }
+        System.out.println("");
+
+        list.add(1,2);
 
         for (Integer i : list) {
             System.out.println(i);
         }
 
-        System.out.println("element: " + list.get(0));
+        list.remove(1);
+        System.out.println("");
+        for (Integer i : list) {
+            System.out.println(i);
+        }
+
+        /*System.out.println("element: " + list.get(0));
         System.out.println("element: " + list.get(2));
         System.out.println("list size: " + list.count());
 
@@ -32,7 +45,7 @@ public class Main {
         list.reverse();
         for (Integer i : list) {
             System.out.println(i);
-        }
+        }*/
 
     }
 }
